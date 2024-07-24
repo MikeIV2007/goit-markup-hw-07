@@ -1,0 +1,148 @@
+@import 'colors';
+@import 'fonts';
+@import 'buttons';
+
+/* Modal window */
+/* Backgtound of the modal window */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* bottom:0;
+    right:0; */
+  background-color: rgba(46, 47, 66, 0.4);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  width: 100%;
+  max-height: 90vh; // Ensure the modal doesn't exceed the viewport height
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 72px;
+  padding-bottom: 24px;
+  @include font-style($small);
+  @include apply-color ($light-slate);
+  @include apply-background-color($white);
+  overflow-y: auto; // Enable scrolling if content exceeds modal height
+  .modal-title {
+    width: 100%;
+    @include font-style($body-medium);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 40px;
+    // padding-bottom: 0;
+  }
+  .modal-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border: none;
+    @include apply-background-color($white);
+    .svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .modal-form {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width:429px) {
+    width: 428px
+    
+  }
+}
+
+
+.modal .form-field {
+  position: relative;
+  display: block;
+  margin-bottom: 24px;
+}
+
+.modal .form-label {
+  position: absolute;
+  top: -18px;
+  left: 0;
+//   @include font-style($small);
+}
+
+.modal .form-input {
+  width: 100%;
+
+  padding: 10px 20px;
+  padding-left: 40px;
+  border-radius: 3px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+}
+
+.modal .icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+
+  transform: translateY(-50%);
+
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+}
+
+.modal .svg {
+  width: 100%;
+  height: 100%;
+}
+
+.modal .form-field:focus-within .form-input,
+.modal .form-field:focus-within .comment {
+  border-color: #4d5ae5;
+  outline: 0;
+}
+
+.modal .form-field:focus-within .svg {
+  fill: #4d5ae5;
+}
+
+.modal .comment {
+//   @include font-style($small);
+  resize: none;
+  width: 100%;
+  padding: 8px 16px;
+  border-radius: 3px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+}
+
+.modal .form-field.textarea {
+  margin-bottom: 16px;
+}
+
+.modal .form-field .underline {
+  @include apply-color($iris);
+  @include font-style($link-text);
+}
+
+.modal .button.primary {
+  margin-left: auto;
+  margin-right: auto;
+}
