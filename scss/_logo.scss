@@ -1,0 +1,18 @@
+@import "colors";
+
+.logo {
+    @include apply-color($navy-blue);
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: left;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    .span {   
+        @include apply-color($iris);
+    // cursor: pointer;
+}
+}

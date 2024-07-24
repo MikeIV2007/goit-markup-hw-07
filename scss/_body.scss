@@ -1,0 +1,10 @@
+@import "fonts";
+@import "colors";
+
+body {
+  @include font-style($body);
+  @include apply-color($slate);
+  margin-left: auto;
+  margin-right: auto;
+}
+

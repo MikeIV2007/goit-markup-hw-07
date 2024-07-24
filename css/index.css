@@ -1,0 +1,13 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 1440px; */
+  /* width: 1148px; */
+  width: 1158px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+h1 a {
+  color: blue;
+}

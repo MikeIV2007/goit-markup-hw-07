@@ -1,0 +1,24 @@
+$cubic: cubic-bezier(0.4, 0, 0.2, 1);
+$timing: 2500ms;
+
+main{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.link {
+    text-decoration: none;
+    font-style: normal;
+}
+
+.text {
+    margin-top: 0;
+    margin-bottom: 0;
+}

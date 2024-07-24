@@ -1,0 +1,44 @@
+@import 'colors';
+@import 'fonts';
+@import 'basic_styles';
+
+    // @include apply-color($white);
+    // @include font-style($button-text);
+    // @include apply-background-color($grey);
+
+.button {
+    @include font-style($button-text);
+    text-align: center;
+
+    border-radius: 4px;
+    border: 1px solid transparent;
+
+    padding: 16px 32px 16px 32px;
+    min-width: 169px;
+
+    cursor: pointer;
+    transition: background-color $timing $cubic;
+}
+
+.button.primary {
+    @include apply-color($white);
+    @include apply-background-color($iris)
+
+}
+
+.button.primary:hover,
+button.primary:focus {
+    @include apply-background-color($ocean)
+}
+
+.button.secondary {
+    color: var(--accent-color);
+    background-color: #F4F4FD;
+    border: 1px solid var(--accent-color);
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+    color: var(--primery-white-color);
+    background-color: #404BBF;
+}
