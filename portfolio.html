@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index</title>
+    <!-- icon in the browser tab -->
+    <link rel="icon" href="./images/astronaut_1.png" type="image/x-icon">
+    <!-- fonts styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
@@ -13,6 +16,9 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <!-- Link the external JavaScript file with defer attribute -->
+    <script src="./js/modal.js" defer></script>
+    <script src="./js/menu.js" defer></script>
 </head>
 
 <body class="body">
@@ -20,23 +26,67 @@
     <header>
 
         <!-- Site navigation -->
-        <div class="container nav">
-            <nav class="main-nav">
-                <a class="logo link" href="./index.html">Web<span class="logo-span">Studio</span></a>
-                <ul class="site-nav list">
-                    <li class="item"><a class="link" href="./index.html">Studio</a></li>
-                    <li class="item"><a class="link active" href="./portfolio.html">Portfolio</a></li>
-                    <li class="item"><a class="link" href="">Contacts</a></li>
-                </ul>
-            </nav>
+        <div class="container">
+            <div class="top-line">
+                <a class="logo link" href="./index.html">Web<span class="logo span">Studio</span></a>
+                <button class="menu-button" type="button" aria-expanded="false" data-menu-button>
+                    <svg class="svg-close" aria-label="close menu">
+                        <use href="./images/hw_7.svg#icon-close"></use>
+                    </svg>
+                    <svg class="svg-humburger" aria-label="open-menu">
+                        <use href="./images/hw_7.svg#icon-charm_menu"></use>
+                    </svg>
+                </button>
+                <nav class="main-nav " data-menu>
 
-            <!-- Address -->
-            <address class="address">
-                <ul class="address list">
-                    <li class="item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="item"><a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-                </ul>
-            </address>
+                    <ul class="site-nav list">
+                        <li class="item"><a class="link active" href="./index.html">Studio</a></li>
+                        <li class="item"><a class="link" href="./portfolio.html">Portfolio</a></li>
+                        <li class="item"><a class="link" href="">Contacts</a></li>
+                    </ul>
+
+                    <!-- Address -->
+                    <address class="address">
+                        <ul class="address list">
+                            <li class="item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+                            <li class="item"><a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                        </ul>
+                    </address>
+
+                    <div class="social-links">
+                        <a class="icon" href="">
+                            <svg class="svg">
+                                <use href="./images/symbol-defs2.svg#icon-instagram">
+                                </use>
+                            </svg>
+                        </a>
+
+                        <a class="icon" href="">
+                            <svg class="svg">
+                                <use href="./images/symbol-defs2.svg#icon-twitter">
+                                </use>
+                            </svg>
+                        </a>
+
+                        <a class="icon" href="">
+                            <svg class="svg">
+                                <use href="./images/symbol-defs2.svg#icon-facebook">
+                                </use>
+                            </svg>
+                        </a>
+
+                        <a class="icon" href="">
+                            <svg class="svg">
+                                <use href="./images/symbol-defs2.svg#icon-linkedin">
+                                </use>
+                            </svg>
+                        </a>
+                    </div>
+                </nav>
+
+            </div>
+
 
         </div>
 

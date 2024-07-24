@@ -400,7 +400,7 @@ header .container .top-line .main-nav .site-nav .item:last-child {
 }
 header .container .top-line .main-nav .site-nav .item .link {
   font-family: "Roboto";
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.02em;
   line-height: 1.11;
@@ -426,7 +426,7 @@ header .container .top-line .main-nav .address .address.list .item:last-child {
 }
 header .container .top-line .main-nav .address .address.list .item .link {
   font-family: "Roboto";
-  font-weight: medium;
+  font-weight: 500;
   font-size: 20px;
   letter-spacing: 0.02em;
   line-height: 1.2;
@@ -434,7 +434,7 @@ header .container .top-line .main-nav .address .address.list .item .link {
 }
 header .container .top-line .main-nav .address .address.list .item .link:hover, header .container .top-line .main-nav .address .address.list .item .link:focus {
   font-family: "Roboto";
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.02em;
   line-height: 1.11;
@@ -908,7 +908,7 @@ main {
 
 .button {
   font-family: "Roboto";
-  font-weight: medium;
+  font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.04em;
   line-height: 1.5;
@@ -937,6 +937,7 @@ button.primary:focus {
   /* position: relative; */
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 96px;
   padding-top: 112px;
   text-align: center;
   background-repeat: no-repeat;
@@ -953,7 +954,7 @@ button.primary:focus {
   margin-right: auto;
   color: #FFFFFF;
   font-family: "Roboto";
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.02em;
   line-height: 1.11;
@@ -1176,7 +1177,7 @@ main {
 
 .button {
   font-family: "Roboto";
-  font-weight: medium;
+  font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.04em;
   line-height: 1.5;
@@ -1242,7 +1243,7 @@ button.primary:focus {
 .modal .modal-title {
   width: 100%;
   font-family: "Roboto";
-  font-weight: medium;
+  font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.02em;
   line-height: 1.5;
@@ -1347,4 +1348,207 @@ button.primary:focus {
 .modal .button.primary {
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Sections */
+.section {
+  max-width: 1440px;
+  padding-top: 0px;
+  padding-bottom: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-title {
+  color: var(--title-text-color);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-top: 0;
+  margin-bottom: 72px;
+}
+
+.section-title.hidden {
+  display: none;
+}
+
+.iris-text {
+  color: #4D5AE5;
+}
+
+.ocean-text {
+  color: #404BBF;
+}
+
+.navy-blue-text {
+  color: #2E2F42;
+}
+
+.green-text {
+  color: #31D0AA;
+}
+
+.slate-text {
+  color: #434455;
+}
+
+.light-slate-text {
+  color: #8E8F99;
+}
+
+.cornflower-text {
+  color: #E7E9FC;
+}
+
+.cloud-text {
+  color: #F4F4FD;
+}
+
+.navy-blue-modal-text {
+  color: #2E2F42;
+}
+
+.grey-text {
+  color: #2E2F42;
+}
+
+.white-text {
+  color: #FFFFFF;
+}
+
+.dairy-text {
+  color: #FCFCFC;
+}
+
+.iris-bg {
+  background-color: #4D5AE5;
+}
+
+.ocean-bg {
+  background-color: #404BBF;
+}
+
+.navy-blue-bg {
+  background-color: #2E2F42;
+}
+
+.green-bg {
+  background-color: #31D0AA;
+}
+
+.slate-bg {
+  background-color: #434455;
+}
+
+.light-slate-bg {
+  background-color: #8E8F99;
+}
+
+.cornflower-bg {
+  background-color: #E7E9FC;
+}
+
+.cloud-bg {
+  background-color: #F4F4FD;
+}
+
+.navy-blue-modal-bg {
+  background-color: #2E2F42;
+}
+
+.grey-bg {
+  background-color: #2E2F42;
+}
+
+.white-bg {
+  background-color: #FFFFFF;
+}
+
+.dairy-bg {
+  background-color: #FCFCFC;
+}
+
+/* Features 2 */
+.features-list .title {
+  color: #2E2F42;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.02em;
+  line-height: 1.11;
+  margin-top: 0;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.features-list .text {
+  color: #434455;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  margin-bottom: 72px;
+}
+
+.features-list .item {
+  width: 100%;
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+
+.features-list .item::before {
+  display: block;
+  content: "";
+  height: 112px;
+  border-radius: 4px;
+  background-color: rgb(244, 244, 253);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 64px, 64px;
+}
+
+.item.icon-antenna::before {
+  display: none;
+  background-image: url(../images/antenna_1.png);
+}
+
+.item.icon-clock::before {
+  display: none;
+  background-image: url(../images/clock_1.png);
+}
+
+.item.icon-diagram::before {
+  display: none;
+  background-image: url(../images/diagram_1.png);
+}
+
+.item.icon-astronaut::before {
+  display: none;
+  background-image: url(../images/astronaut_1.png);
+}
+
+/* for n element in the row */
+.features-list .item:nth-child(4n) {
+  margin-right: 0;
+}
+
+/* for the last 4 elements in the container */
+.features-list .item:nth-last-child(-n+4) {
+  margin-bottom: 0;
+}
+
+.profile-list .title,
+.projects-list .title {
+  color: #2E2F42;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.02em;
+  line-height: 1.11;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 8px;
 }
