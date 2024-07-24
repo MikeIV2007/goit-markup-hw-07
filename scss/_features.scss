@@ -65,12 +65,12 @@
   margin-bottom: 0;
 }
 
-.profile-list .title,
-.projects-list .title {
-  @include apply-color($navy-blue);
-  @include font-style($header2);
-  text-align: center;
+// .profile-list .title,
+// .projects-list .title {
+//   @include apply-color($navy-blue);
+//   @include font-style($header2);
+//   text-align: center;
 
-  margin-top: 0;
-  margin-bottom: 8px;
-}
+//   margin-top: 0;
+//   margin-bottom: 8px;
+// }

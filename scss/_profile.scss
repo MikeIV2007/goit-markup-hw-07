@@ -1,0 +1,65 @@
+@import 'colors';
+@import 'fonts';
+@import 'social-links';
+
+/* Profile 4 */
+.section.profile {
+  @include apply-background-color($cloud);
+  padding-top: 120px;
+  margin-bottom: 120px;
+  .title {
+    @include apply-color($navy-blue);
+    @include font-style($header3);
+    margin-top: 0;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .text {
+    @include apply-color($slate);
+    @include font-style($body);
+    margin-bottom: 8px;
+  }
+}
+
+.profile-img {
+  width: 100%;
+//   @include apply-background-color($white);
+  margin-bottom: 32px;
+}
+
+.profile-list {
+  display: block;
+  width: 246px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .item {
+    @include apply-background-color($white);
+    // margin: 12px;
+    margin-bottom: 72px;
+    text-align: center;
+    padding-bottom: 32px;
+    .content {
+      width: 100%;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
+  //   display: flex;
+  //   justify-content: center;
+  //   margin: -12px;
+}
+
+// .profile-list .content {
+//   width: 232px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   margin-bottom: 32px;
+// }
+
+// .profile-list .title,
+// .profile-list .text {
+//   text-align: center;
+//   margin-bottom: 8px;
+// }

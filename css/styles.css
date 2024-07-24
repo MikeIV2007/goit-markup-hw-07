@@ -1354,7 +1354,7 @@ button.primary:focus {
 .section {
   max-width: 1440px;
   padding-top: 0px;
-  padding-bottom: 120px;
+  padding-bottom: 96px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1540,7 +1540,113 @@ button.primary:focus {
   margin-bottom: 0;
 }
 
-.profile-list .title,
+.iris-text {
+  color: #4D5AE5;
+}
+
+.ocean-text {
+  color: #404BBF;
+}
+
+.navy-blue-text {
+  color: #2E2F42;
+}
+
+.green-text {
+  color: #31D0AA;
+}
+
+.slate-text {
+  color: #434455;
+}
+
+.light-slate-text {
+  color: #8E8F99;
+}
+
+.cornflower-text {
+  color: #E7E9FC;
+}
+
+.cloud-text {
+  color: #F4F4FD;
+}
+
+.navy-blue-modal-text {
+  color: #2E2F42;
+}
+
+.grey-text {
+  color: #2E2F42;
+}
+
+.white-text {
+  color: #FFFFFF;
+}
+
+.dairy-text {
+  color: #FCFCFC;
+}
+
+.iris-bg {
+  background-color: #4D5AE5;
+}
+
+.ocean-bg {
+  background-color: #404BBF;
+}
+
+.navy-blue-bg {
+  background-color: #2E2F42;
+}
+
+.green-bg {
+  background-color: #31D0AA;
+}
+
+.slate-bg {
+  background-color: #434455;
+}
+
+.light-slate-bg {
+  background-color: #8E8F99;
+}
+
+.cornflower-bg {
+  background-color: #E7E9FC;
+}
+
+.cloud-bg {
+  background-color: #F4F4FD;
+}
+
+.navy-blue-modal-bg {
+  background-color: #2E2F42;
+}
+
+.grey-bg {
+  background-color: #2E2F42;
+}
+
+.white-bg {
+  background-color: #FFFFFF;
+}
+
+.dairy-bg {
+  background-color: #FCFCFC;
+}
+
+/* Projects 3 */
+.projects-list {
+  display: flex;
+  justify-content: center;
+  margin: -12px;
+}
+
+.projects-list .item {
+  margin: 12px;
+}
+
 .projects-list .title {
   color: #2E2F42;
   font-family: "Roboto";
@@ -1551,4 +1657,183 @@ button.primary:focus {
   text-align: center;
   margin-top: 0;
   margin-bottom: 8px;
+}
+
+.section.hidden {
+  display: none;
+}
+
+.iris-text {
+  color: #4D5AE5;
+}
+
+.ocean-text {
+  color: #404BBF;
+}
+
+.navy-blue-text {
+  color: #2E2F42;
+}
+
+.green-text {
+  color: #31D0AA;
+}
+
+.slate-text {
+  color: #434455;
+}
+
+.light-slate-text {
+  color: #8E8F99;
+}
+
+.cornflower-text {
+  color: #E7E9FC;
+}
+
+.cloud-text {
+  color: #F4F4FD;
+}
+
+.navy-blue-modal-text {
+  color: #2E2F42;
+}
+
+.grey-text {
+  color: #2E2F42;
+}
+
+.white-text {
+  color: #FFFFFF;
+}
+
+.dairy-text {
+  color: #FCFCFC;
+}
+
+.iris-bg {
+  background-color: #4D5AE5;
+}
+
+.ocean-bg {
+  background-color: #404BBF;
+}
+
+.navy-blue-bg {
+  background-color: #2E2F42;
+}
+
+.green-bg {
+  background-color: #31D0AA;
+}
+
+.slate-bg {
+  background-color: #434455;
+}
+
+.light-slate-bg {
+  background-color: #8E8F99;
+}
+
+.cornflower-bg {
+  background-color: #E7E9FC;
+}
+
+.cloud-bg {
+  background-color: #F4F4FD;
+}
+
+.navy-blue-modal-bg {
+  background-color: #2E2F42;
+}
+
+.grey-bg {
+  background-color: #2E2F42;
+}
+
+.white-bg {
+  background-color: #FFFFFF;
+}
+
+.dairy-bg {
+  background-color: #FCFCFC;
+}
+
+.social-links {
+  width: inherit;
+  max-width: 328px;
+  min-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.social-links .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(77, 90, 229);
+  border-radius: 50%;
+  transition: background-color var(--timing) var(--cubic);
+}
+.social-links .icon .svg {
+  width: 16px;
+  height: 16px;
+}
+
+.social-links .icon:hover,
+.social-links .icon:focus {
+  background-color: #31d0aa;
+}
+
+/* Profile 4 */
+.section.profile {
+  background-color: #F4F4FD;
+  padding-top: 120px;
+  margin-bottom: 120px;
+}
+.section.profile .title {
+  color: #2E2F42;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.section.profile .text {
+  color: #434455;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.profile-img {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.profile-list {
+  display: block;
+  width: 246px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.profile-list .item {
+  background-color: #FFFFFF;
+  margin-bottom: 72px;
+  text-align: center;
+  padding-bottom: 32px;
+}
+.profile-list .item .content {
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
 }
