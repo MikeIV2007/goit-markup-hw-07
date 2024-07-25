@@ -69,102 +69,112 @@ $dairy: (
   background-color: map-get($color-map, value);
 }
 
+// Mixin to apply for svg fill
+@mixin svg-fill ($color-map){
+  fill: map-get($color-map, value);
+}
+
+// Mixin to apply for border color
+@mixin border-color ($color-map){
+  border-color: map-get($color-map, value);
+}
+
 // Usage examples:
 
 // Text colors
-.iris-text {
-  @include apply-color($iris);
-}
+// .iris-text {
+//   @include apply-color($iris);
+// }
 
-.ocean-text {
-  @include apply-color($ocean);
-}
+// .ocean-text {
+//   @include apply-color($ocean);
+// }
 
-.navy-blue-text {
-  @include apply-color($navy-blue);
-}
+// .navy-blue-text {
+//   @include apply-color($navy-blue);
+// }
 
-.green-text {
-  @include apply-color($green);
-}
+// .green-text {
+//   @include apply-color($green);
+// }
 
-.slate-text {
-  @include apply-color($slate);
-}
+// .slate-text {
+//   @include apply-color($slate);
+// }
 
-.light-slate-text {
-  @include apply-color($light-slate);
-}
+// .light-slate-text {
+//   @include apply-color($light-slate);
+// }
 
-.cornflower-text {
-  @include apply-color($cornflower);
-}
+// .cornflower-text {
+//   @include apply-color($cornflower);
+// }
 
-.cloud-text {
-  @include apply-color($cloud);
-}
+// .cloud-text {
+//   @include apply-color($cloud);
+// }
 
-.navy-blue-modal-text {
-  @include apply-color($navy-blue-modal);
-}
+// .navy-blue-modal-text {
+//   @include apply-color($navy-blue-modal);
+// }
 
-.grey-text {
-  @include apply-color($grey);
-}
+// .grey-text {
+//   @include apply-color($grey);
+// }
 
-.white-text {
-  @include apply-color($white);
-}
+// .white-text {
+//   @include apply-color($white);
+// }
 
-.dairy-text {
-  @include apply-color($dairy);
-}
+// .dairy-text {
+//   @include apply-color($dairy);
+// }
 
-// Background colors
-.iris-bg {
-  @include apply-background-color($iris);
-}
+// // Background colors
+// .iris-bg {
+//   @include apply-background-color($iris);
+// }
 
-.ocean-bg {
-  @include apply-background-color($ocean);
-}
+// .ocean-bg {
+//   @include apply-background-color($ocean);
+// }
 
-.navy-blue-bg {
-  @include apply-background-color($navy-blue);
-}
+// .navy-blue-bg {
+//   @include apply-background-color($navy-blue);
+// }
 
-.green-bg {
-  @include apply-background-color($green);
-}
+// .green-bg {
+//   @include apply-background-color($green);
+// }
 
-.slate-bg {
-  @include apply-background-color($slate);
-}
+// .slate-bg {
+//   @include apply-background-color($slate);
+// }
 
-.light-slate-bg {
-  @include apply-background-color($light-slate);
-}
+// .light-slate-bg {
+//   @include apply-background-color($light-slate);
+// }
 
-.cornflower-bg {
-  @include apply-background-color($cornflower);
-}
+// .cornflower-bg {
+//   @include apply-background-color($cornflower);
+// }
 
-.cloud-bg {
-  @include apply-background-color($cloud);
-}
+// .cloud-bg {
+//   @include apply-background-color($cloud);
+// }
 
-.navy-blue-modal-bg {
-  @include apply-background-color($navy-blue-modal);
-}
+// .navy-blue-modal-bg {
+//   @include apply-background-color($navy-blue-modal);
+// }
 
-.grey-bg {
-  @include apply-background-color($grey);
-}
+// .grey-bg {
+//   @include apply-background-color($grey);
+// }
 
-.white-bg {
-  @include apply-background-color($white);
-}
+// .white-bg {
+//   @include apply-background-color($white);
+// }
 
-.dairy-bg {
-  @include apply-background-color($dairy);
-}
+// .dairy-bg {
+//   @include apply-background-color($dairy);
+// }
