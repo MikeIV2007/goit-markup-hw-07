@@ -731,7 +731,10 @@ button.primary:focus {
 }
 
 /* Features 2 */
-.features-list .title {
+.features-list .item {
+  width: 100%;
+}
+.features-list .item .title {
   color: #2E2F42;
   font-family: "Roboto";
   font-weight: 700;
@@ -742,7 +745,7 @@ button.primary:focus {
   margin-bottom: 8px;
   text-align: center;
 }
-.features-list .text {
+.features-list .item .text {
   color: #434455;
   font-family: "Roboto";
   font-weight: 500;
@@ -752,53 +755,25 @@ button.primary:focus {
   margin-bottom: 72px;
 }
 
-.features-list .item {
-  width: 100%;
-  margin-right: 24px;
-  margin-bottom: 24px;
+@media screen and (min-width: 768px) {
+  .features-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .features-list .item {
+    flex-basis: 46%;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  .features-list .item .title {
+    text-align: left;
+  }
 }
-
-.features-list .item::before {
-  display: block;
-  content: "";
-  height: 112px;
-  border-radius: 4px;
-  background-color: rgb(244, 244, 253);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 64px, 64px;
-}
-
-.item.icon-antenna::before {
-  display: none;
-  background-image: url(../images/antenna_1.png);
-}
-
-.item.icon-clock::before {
-  display: none;
-  background-image: url(../images/clock_1.png);
-}
-
-.item.icon-diagram::before {
-  display: none;
-  background-image: url(../images/diagram_1.png);
-}
-
-.item.icon-astronaut::before {
-  display: none;
-  background-image: url(../images/astronaut_1.png);
-}
-
 /* for n element in the row */
-.features-list .item:nth-child(4n) {
-  margin-right: 0;
-}
-
 /* for the last 4 elements in the container */
-.features-list .item:nth-last-child(-n+4) {
-  margin-bottom: 0;
-}
-
 /* Projects 3 */
 .projects-list {
   display: flex;
