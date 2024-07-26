@@ -3,6 +3,7 @@
 @import 'social-links';
 
 header {
+  max-width: 1440px;
   .container {
     position: relative;
     border-bottom: 1px solid #{map-get($cornflower, value)};
