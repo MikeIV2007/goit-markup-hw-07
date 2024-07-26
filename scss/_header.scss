@@ -6,7 +6,7 @@ header {
   max-width: 1440px;
   .container {
     position: relative;
-    border-bottom: 1px solid #{map-get($cornflower, value)};
+    border-bottom: 1px solid map-get($cornflower, value);
     .top-line {
       display: flex;
       align-items: center;
@@ -23,10 +23,10 @@ header {
         padding: 0;
         @include apply-background-color($white);
       }
-      .menu-button.is-open .svg-close {
+      .is-open .svg-close {
         display: block;
       }
-      .menu-button.is-open .svg-humburger {
+      .is-open .svg-humburger {
         display: none;
       }
       .svg-close {

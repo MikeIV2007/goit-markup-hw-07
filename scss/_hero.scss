@@ -3,30 +3,37 @@
 // @import 'buttons';
 
 .overlay {
-    max-width: 428px;
-    height: 432px;
-    /* position: relative; */
-    // max-width: 1440px;
-   
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 96px;
-    padding-top: 112px;
-    text-align: center;
+  max-width: 428px;
+  height: 436px;
+  /* position: relative; */
+  // max-width: 1440px;
 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 96px;
+  padding-top: 112px;
+  text-align: center;
 
-    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/people_office_01.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
-    @include apply-background-color($grey);
-    // @media screen and (max-width:429) {
-    //     width:428px;       
-    // }
-    .title{
-    width:100%;
+  background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people_office_01.png);
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @include apply-background-color($grey);
+  // @media screen and (max-width:429) {
+  //     width:428px;
+  // }
+  .title {
+    width: 100%;
     margin-top: 0;
     margin-bottom: 72px;
     margin-left: auto;
@@ -34,6 +41,5 @@
     @include apply-color($white);
     @include font-style($header2);
     text-align: inherit;
-    }
+  }
 }
-

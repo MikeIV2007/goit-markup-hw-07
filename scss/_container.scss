@@ -8,9 +8,13 @@
   padding-left: 16px;
   padding-right: 16px;
 
-  @media screen and (min-width: 429px) {
+  @media screen and (min-width: 428px) {
     width: 428px;
   }
-
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 1440px;
+  }
 }
-
