@@ -149,17 +149,18 @@ header {
           }
 
           .address {
-            flex-direction: column-reverse;
-            justify-content: center;
-            align-items: flex-end;
+            display: block;
+            // flex-direction: column-reverse;
+            // justify-content: center;
+            // align-items: flex-end;
             height: inherit;
 
             .address.list {
-              // display: flex;
-              // align-items: center;
-              // justify-content: center;
-              height: 70px;
-              margin: 0;
+              display: flex;
+              flex-direction: column-reverse;
+              align-items: center;
+              justify-content: center;
+              height: 100%;
               .item {
                 margin-bottom: 0;
                 &:last-child {
