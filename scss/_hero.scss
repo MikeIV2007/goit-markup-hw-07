@@ -1,6 +1,6 @@
-// @import 'colors';
-// @import 'fonts';
-// @import 'buttons';
+@import 'colors';
+@import 'fonts';
+@import 'buttons';
 
 .overlay {
   max-width: 428px;
@@ -24,9 +24,6 @@
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people_office_01.png);
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-  }
 
   @include apply-background-color($grey);
   // @media screen and (max-width:429) {
@@ -41,5 +38,10 @@
     @include apply-color($white);
     @include font-style($header2);
     text-align: inherit;
+  }
+}
+@media screen and (min-width: 768px) {
+  .overlay {
+    max-width: 768px;
   }
 }
