@@ -24,9 +24,6 @@
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people_office_01.png);
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-  }
 
   @include apply-background-color($grey);
   // @media screen and (max-width:429) {

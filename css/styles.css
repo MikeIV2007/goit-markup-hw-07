@@ -87,9 +87,6 @@ main {
   height: 16px;
 }
 
-header {
-  max-width: 1440px;
-}
 header .container {
   position: relative;
   border-bottom: 1px solid #E7E9FC;
@@ -188,6 +185,76 @@ header .container .top-line .main-nav .address .address.list .item .link:hover, 
   letter-spacing: 0.02em;
   line-height: 1.11;
   color: #4D5AE5;
+}
+@media screen and (min-width: 768px) {
+  header .container .top-line .logo.span {
+    padding-right: 120px;
+  }
+  header .container .top-line .menu-button {
+    display: none;
+  }
+  header .container .top-line .main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: static;
+    width: 100%;
+    height: 70px;
+    padding: 0;
+    border-top: none;
+  }
+  header .container .top-line .main-nav .site-nav {
+    display: flex;
+    margin: 0 -20px;
+  }
+  header .container .top-line .main-nav .site-nav .item {
+    margin: 0 20px;
+  }
+  header .container .top-line .main-nav .site-nav .item .link {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    color: #2E2F42;
+  }
+  header .container .top-line .main-nav .site-nav .item .link.active {
+    color: #404BBF;
+  }
+  header .container .top-line .main-nav .address {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-end;
+    height: inherit;
+  }
+  header .container .top-line .main-nav .address .address.list {
+    height: 70px;
+    margin: 0;
+  }
+  header .container .top-line .main-nav .address .address.list .item {
+    margin-bottom: 0;
+  }
+  header .container .top-line .main-nav .address .address.list .item:last-child {
+    margin: 0;
+  }
+  header .container .top-line .main-nav .address .address.list .item .link {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    line-height: 1.17;
+  }
+  header .container .top-line .main-nav .address .address.list .item .link:hover, header .container .top-line .main-nav .address .address.list .item .link:focus {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    line-height: 1.17;
+    color: #4D5AE5;
+  }
+  header .container .top-line .main-nav .social-links {
+    display: none;
+  }
 }
 
 .footer {
@@ -372,11 +439,6 @@ main {
   background-position: center;
   background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office_01.png);
   background-color: #2E2F42;
-}
-@media screen and (min-width: 768px) {
-  .overlay {
-    max-width: 768px;
-  }
 }
 .overlay .title {
   width: 100%;
