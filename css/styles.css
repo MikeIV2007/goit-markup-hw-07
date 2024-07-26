@@ -853,6 +853,30 @@ button.primary:focus {
   margin-bottom: 8px;
 }
 
+@media screen and (min-width: 768px) {
+  .section.profile {
+    background-color: #F4F4FD;
+    padding-top: 96px;
+    margin-bottom: 96px;
+  }
+  .section.profile .container .profile-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .section.profile .container .profile-list .item {
+    flex-basis: 40%;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  .section.profile .container .profile-list .item:nth-last-child(1) {
+    margin-bottom: 72px;
+  }
+}
 /* Customers */
 .section.customers .container .customers-list {
   display: flex;
