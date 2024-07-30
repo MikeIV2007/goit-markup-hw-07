@@ -577,7 +577,6 @@ button.primary:focus {
 .overlay {
   max-width: 428px;
   height: 436px;
-  /* position: relative; */
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 96px;
@@ -607,6 +606,22 @@ button.primary:focus {
 @media screen and (min-width: 768px) {
   .overlay {
     max-width: 768px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .overlay {
+    max-width: 1440px;
+    min-height: 600px;
+    padding-top: 188px;
+  }
+  .overlay .title {
+    width: 496px;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 56px;
+    letter-spacing: 0.02em;
+    line-height: 1.07;
+    margin-bottom: 48px;
   }
 }
 main {
