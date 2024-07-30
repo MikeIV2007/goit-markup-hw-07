@@ -4,7 +4,7 @@
 @import 'basic_styles';
 
 /* Portfolio */
-.portfolio-list {
+.portfolio-list.list {
   display: inline-block;
   .item {
     width: 100%;
@@ -60,7 +60,7 @@
   }
 }
 
-.portfolio-list .item:hover .prodact-thumb-overlay {
+.portfolio-list.list .item:hover .prodact-thumb-overlay {
   transform: translateY(0);
   opacity: 1;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -68,22 +68,32 @@
 }
 
 @media screen and (min-width: 768px) {
-  .portfolio-list {
+  .portfolio-list.list {
     display: flex;
     flex-wrap: wrap;
     margin-left: -12px;
     margin-right: -12px;
-    margin-bottom: 96px;
+    margin-bottom: 72px;
+    margin-top: -24px;
     .item {
       flex-basis: 46%;
       margin-left: 12px;
       margin-right: 12px;
-      margin-bottom: 76px;
-      &:nth-last-child(1):nth-child(even),
-      &:nth-last-child(1):nth-child(odd),
-      &:nth-last-child(2):nth-child(odd) {
-        margin-bottom: 0;
-      }
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .portfolio-list.list {
+    justify-content: flex-start;
+    padding-left: 156px;
+    padding-right: 156px;
+    margin-bottom: 96px;
+    .item.link {
+      max-width: 360px;
+      flex-basis:31%;
     }
   }
 }
