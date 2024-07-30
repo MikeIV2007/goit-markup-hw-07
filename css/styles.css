@@ -893,14 +893,11 @@ button.primary:focus {
     flex-wrap: nowrap;
     padding-left: 156px;
     padding-right: 156px;
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-bottom: 120px;
   }
   .features-list.list .item {
     min-width: 264px;
     flex-basis: 0;
-    margin-left: 12px;
-    margin-right: 12px;
   }
   .features-list.list .item::before {
     display: block;
@@ -915,6 +912,9 @@ button.primary:focus {
   .features-list.list .item .title {
     margin-top: 8px;
     margin-bottom: 8px;
+  }
+  .features-list.list .item .text {
+    margin-bottom: 0;
   }
 }
 .item.icon-antenna::before {
@@ -933,20 +933,16 @@ button.primary:focus {
   background-image: url(../images/astronaut_1.png);
 }
 
-/* for n element in the row */
-/* for the last 4 elements in the container */
 /* Projects 3 */
-.projects-list {
+.projects-list.list {
   display: flex;
   justify-content: center;
   margin: -12px;
 }
-
-.projects-list .item {
+.projects-list.list .item {
   margin: 12px;
 }
-
-.projects-list .title {
+.projects-list.list .item .title {
   color: #2E2F42;
   font-family: "Roboto";
   font-weight: 700;
@@ -962,6 +958,14 @@ button.primary:focus {
   display: none;
 }
 
+@media screen and (min-width: 1440px) {
+  .section.hidden {
+    display: block;
+  }
+  .projects-list.list {
+    margin-bottom: 120px;
+  }
+}
 /* Profile 4 */
 .section.profile {
   background-color: #F4F4FD;
