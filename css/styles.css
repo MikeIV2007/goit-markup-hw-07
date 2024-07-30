@@ -77,7 +77,7 @@ main {
   height: 40px;
   background-color: #4D5AE5;
   border-radius: 50%;
-  transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-links .icon:hover, .social-links .icon:focus {
   background-color: #31D0AA;
@@ -586,7 +586,7 @@ main {
   padding: 16px 32px 16px 32px;
   min-width: 169px;
   cursor: pointer;
-  transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button.primary {
@@ -683,7 +683,7 @@ main {
   padding: 16px 32px 16px 32px;
   min-width: 169px;
   cursor: pointer;
-  transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button.primary {
@@ -1127,7 +1127,7 @@ main {
   margin-bottom: 72px;
   border-radius: 4px;
   border: 1px solid #8E8F99;
-  transition: border 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section.customers .container .customers-list.list .item:hover, .section.customers .container .customers-list.list .item:focus {
   border-color: #404BBF;
@@ -1149,7 +1149,7 @@ main {
   width: 104px;
   height: 56px;
   fill: #8E8F99;
-  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section.customers .container .customers-list.list .item .company-link .icon:hover, .section.customers .container .customers-list.list .item .company-link .icon:focus {
   fill: #404BBF;
@@ -1223,7 +1223,7 @@ main {
   padding: 16px 32px 16px 32px;
   min-width: 169px;
   cursor: pointer;
-  transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button.primary {
@@ -1281,7 +1281,7 @@ main {
   padding: 8px 16px;
   color: #4D5AE5;
   background-color: #F4F4FD;
-  transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-nav .item .button:hover, .filter-nav .item .button:focus {
   color: #FFFFFF;
@@ -1328,7 +1328,7 @@ main {
   padding: 16px 32px 16px 32px;
   min-width: 169px;
   cursor: pointer;
-  transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button.primary {
@@ -1364,10 +1364,10 @@ main {
 }
 
 /* Portfolio */
-.portfolio-list {
+.portfolio-list.list {
   display: inline-block;
 }
-.portfolio-list .item {
+.portfolio-list.list .item {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -1375,18 +1375,18 @@ main {
   border: 1px solid #e7e9fc;
   color: #F4F4FD;
 }
-.portfolio-list .item:hover, .portfolio-list .item:focus {
+.portfolio-list.list .item:hover, .portfolio-list.list .item:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-.portfolio-list .item .prodact-thumb {
+.portfolio-list.list .item .prodact-thumb {
   position: relative;
   overflow: hidden;
 }
-.portfolio-list .item .prodact-thumb .img {
+.portfolio-list.list .item .prodact-thumb .img {
   width: 100%;
   height: 280px;
 }
-.portfolio-list .item .prodact-thumb .prodact-thumb-overlay {
+.portfolio-list.list .item .prodact-thumb .prodact-thumb-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1396,15 +1396,15 @@ main {
   background-color: rgb(77, 90, 229);
   transform: translateY(100%);
   opacity: 0;
-  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1), opacity 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px 32px;
 }
-.portfolio-list .item .content {
+.portfolio-list.list .item .content {
   padding-left: 16px;
   margin-top: 32px;
   margin-bottom: 32px;
 }
-.portfolio-list .item .content .title {
+.portfolio-list.list .item .content .title {
   margin-top: 0;
   margin-bottom: 8px;
   font-family: "Roboto";
@@ -1414,7 +1414,7 @@ main {
   line-height: 1.2;
   color: #2E2F42;
 }
-.portfolio-list .item .content .text {
+.portfolio-list.list .item .content .text {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 16px;
@@ -1424,27 +1424,38 @@ main {
   margin-bottom: 8px;
 }
 
-.portfolio-list .item:hover .prodact-thumb-overlay {
+.portfolio-list.list .item:hover .prodact-thumb-overlay {
   transform: translateY(0);
   opacity: 1;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 @media screen and (min-width: 768px) {
-  .portfolio-list {
+  .portfolio-list.list {
     display: flex;
     flex-wrap: wrap;
     margin-left: -12px;
     margin-right: -12px;
-    margin-bottom: 96px;
+    margin-bottom: 72px;
+    margin-top: -24px;
   }
-  .portfolio-list .item {
+  .portfolio-list.list .item {
     flex-basis: 46%;
     margin-left: 12px;
     margin-right: 12px;
-    margin-bottom: 76px;
+    margin-top: 24px;
+    margin-bottom: 24px;
   }
-  .portfolio-list .item:nth-last-child(1):nth-child(even), .portfolio-list .item:nth-last-child(1):nth-child(odd), .portfolio-list .item:nth-last-child(2):nth-child(odd) {
-    margin-bottom: 0;
+}
+@media screen and (min-width: 1440px) {
+  .portfolio-list.list {
+    justify-content: flex-start;
+    padding-left: 156px;
+    padding-right: 156px;
+    margin-bottom: 96px;
+  }
+  .portfolio-list.list .item.link {
+    max-width: 360px;
+    flex-basis: 31%;
   }
 }
