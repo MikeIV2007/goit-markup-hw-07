@@ -204,13 +204,24 @@ header .container .top-line .main-nav .address .address.list .item .link:hover, 
     border-top: none;
   }
   header .container .top-line .main-nav .site-nav {
+    height: 100%;
     display: flex;
-    margin: 0 -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
   header .container .top-line .main-nav .site-nav .item {
-    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    height: 100%;
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   header .container .top-line .main-nav .site-nav .item .link {
+    display: inline-block;
     font-family: "Roboto";
     font-weight: 500;
     font-size: 16px;
@@ -220,6 +231,22 @@ header .container .top-line .main-nav .address .address.list .item .link:hover, 
   }
   header .container .top-line .main-nav .site-nav .item .link.active {
     color: #404BBF;
+  }
+  header .container .top-line .main-nav .site-nav .item .link.active::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 40px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #404BBF;
+    border: none;
+    bottom: 0;
+    /* Position it at the bottom of the .link */
+    left: 50%;
+    /* Center it horizontally */
+    transform: translateX(-50%);
+    /* Center it horizontally */
   }
   header .container .top-line .main-nav .address {
     display: block;
@@ -258,6 +285,41 @@ header .container .top-line .main-nav .address .address.list .item .link:hover, 
   }
 }
 
+@media screen and (min-width: 1440px) {
+  header .container .top-line {
+    padding-left: 156px;
+    padding-right: 156px;
+  }
+  header .container .top-line .main-nav .address .address.list {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+  header .container .top-line .main-nav .address .address.list .item {
+    margin-bottom: 0px;
+    margin-right: 40px;
+  }
+  header .container .top-line .main-nav .address .address.list .item:last-child {
+    margin-bottom: 0px;
+    margin-right: 0px;
+  }
+  header .container .top-line .main-nav .address .address.list .item .link {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    color: #2E2F42;
+  }
+  header .container .top-line .main-nav .address .address.list .item .link:hover, header .container .top-line .main-nav .address .address.list .item .link:focus {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    color: #4D5AE5;
+  }
+}
 .footer {
   max-width: 1440px;
   background-color: #2E2F42;
