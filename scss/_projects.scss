@@ -3,25 +3,33 @@
 
 /* Projects 3 */
 
-.projects-list {
-    display: flex;
-    justify-content: center;
-    margin: -12px;
-}
-
-.projects-list .item {
+.projects-list.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -12px;
+  .item {
     margin: 12px;
+    .title {
+      @include apply-color($navy-blue);
+      @include font-style($header2);
+      text-align: center;
+
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+  }
 }
 
-.projects-list .title {
-  @include apply-color($navy-blue);
-  @include font-style($header2);
-  text-align: center;
-
-  margin-top: 0;
-  margin-bottom: 8px;
+.section.hidden {
+  display: none;
 }
 
-.section.hidden{
-    display:none;
+@media screen and (min-width: 1440px) {
+  .section.hidden {
+    display: block;
+  }
+  .projects-list.list{
+    margin-bottom: 120px;
+  }
 }

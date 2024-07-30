@@ -2,7 +2,7 @@
 @import 'fonts';
 
 /* Features 2 */
-.features-list {
+.features-list.list {
   .item {
     width: 100%;
     // width: calc((100% - 72px) / 4);
@@ -25,7 +25,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .features-list {
+  .features-list.list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -42,50 +42,53 @@
   }
 }
 
-// .features-list .item {
-//   width: 100%;
-//   // width: calc((100% - 72px) / 4);
-//   margin-right: 24px;
-//   margin-bottom: 24px;
-// }
+@media screen and (min-width: 1440px) {
+  .features-list.list {
+    flex-wrap: nowrap;
+    padding-left: 156px;
+    padding-right: 156px;
+    margin-bottom: 120px;
+    .item {
+      min-width: 264px;
+      flex-basis: 0;
+      // margin-left: 12px;
+      // margin-right: 12px;
+      // .title {
+      //   text-align: left;
+      // }
+      &::before {
+        display: block;
+        content: '';
+        height: 112px;
+        border-radius: 4px;
+        background-color: rgba(244, 244, 253, 1);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 64px, 64px;
+      }
+      .title {
+        margin-top: 8px;
+        margin-bottom: 8px;
+      }
+      .text {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
 
-// .features-list .item::before {
-//   display: block;
-//   content: '';
-//   height: 112px;
-//   border-radius: 4px;
-//   background-color: rgba(244, 244, 253, 1);
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: 64px, 64px;
-// }
+.item.icon-antenna::before {
+  background-image: url(../images/antenna_1.png);
+}
 
-// .item.icon-antenna::before {
-//   display: none;
-//   background-image: url(../images/antenna_1.png);
-// }
+.item.icon-clock::before {
+  background-image: url(../images/clock_1.png);
+}
 
-// .item.icon-clock::before {
-//   display: none;
-//   background-image: url(../images/clock_1.png);
-// }
+.item.icon-diagram::before {
+  background-image: url(../images/diagram_1.png);
+}
 
-// .item.icon-diagram::before {
-//   display: none;
-//   background-image: url(../images/diagram_1.png);
-// }
-
-// .item.icon-astronaut::before {
-//   display: none;
-//   background-image: url(../images/astronaut_1.png);
-// }
-
-/* for n element in the row */
-// .features-list .item:nth-child(4n) {
-//   margin-right: 0;
-// }
-
-/* for the last 4 elements in the container */
-// .features-list .item:nth-last-child(-n + 4) {
-//   margin-bottom: 0;
-// }
+.item.icon-astronaut::before {
+  background-image: url(../images/astronaut_1.png);
+}
