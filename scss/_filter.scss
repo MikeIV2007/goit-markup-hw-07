@@ -12,13 +12,12 @@
   padding-top: 48px;
   margin-bottom: 36px;
   margin-bottom: 48px;
-  width:100%;
+  width: 100%;
   margin-right: -12px;
   margin-left: -12px;
 
   .item {
     display: inline-block;
-    // margin: 0 12px;
     margin-bottom: 16px;
     margin-right: 12px;
     margin-left: 12px;
@@ -37,4 +36,9 @@
   }
 }
 
-
+@media screen and (min-width: 768px) {
+  .filter-nav {
+    align-items: center;
+    justify-content: center;
+  }
+}
