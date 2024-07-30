@@ -847,10 +847,10 @@ button.primary:focus {
 }
 
 /* Features 2 */
-.features-list .item {
+.features-list.list .item {
   width: 100%;
 }
-.features-list .item .title {
+.features-list.list .item .title {
   color: #2E2F42;
   font-family: "Roboto";
   font-weight: 700;
@@ -861,7 +861,7 @@ button.primary:focus {
   margin-bottom: 8px;
   text-align: center;
 }
-.features-list .item .text {
+.features-list.list .item .text {
   color: #434455;
   font-family: "Roboto";
   font-weight: 500;
@@ -872,22 +872,67 @@ button.primary:focus {
 }
 
 @media screen and (min-width: 768px) {
-  .features-list {
+  .features-list.list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-left: -12px;
     margin-right: -12px;
   }
-  .features-list .item {
+  .features-list.list .item {
     flex-basis: 46%;
     margin-left: 12px;
     margin-right: 12px;
   }
-  .features-list .item .title {
+  .features-list.list .item .title {
     text-align: left;
   }
 }
+@media screen and (min-width: 1440px) {
+  .features-list.list {
+    flex-wrap: nowrap;
+    padding-left: 156px;
+    padding-right: 156px;
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .features-list.list .item {
+    min-width: 264px;
+    flex-basis: 0;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  .features-list.list .item::before {
+    display: block;
+    content: "";
+    height: 112px;
+    border-radius: 4px;
+    background-color: rgb(244, 244, 253);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 64px, 64px;
+  }
+  .features-list.list .item .title {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+.item.icon-antenna::before {
+  background-image: url(../images/antenna_1.png);
+}
+
+.item.icon-clock::before {
+  background-image: url(../images/clock_1.png);
+}
+
+.item.icon-diagram::before {
+  background-image: url(../images/diagram_1.png);
+}
+
+.item.icon-astronaut::before {
+  background-image: url(../images/astronaut_1.png);
+}
+
 /* for n element in the row */
 /* for the last 4 elements in the container */
 /* Projects 3 */
