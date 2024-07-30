@@ -936,6 +936,7 @@ button.primary:focus {
 /* Projects 3 */
 .projects-list.list {
   display: flex;
+  align-items: center;
   justify-content: center;
   margin: -12px;
 }
@@ -972,32 +973,32 @@ button.primary:focus {
   padding-top: 96px;
   margin-bottom: 96px;
 }
-.section.profile .container .profile-list {
+.section.profile .container .profile-list.list {
   display: block;
   width: 246px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 96px;
 }
-.section.profile .container .profile-list .item {
+.section.profile .container .profile-list.list .item {
   background-color: #FFFFFF;
   margin-bottom: 72px;
   text-align: center;
   padding-bottom: 32px;
 }
-.section.profile .container .profile-list .item:nth-last-child(1) {
+.section.profile .container .profile-list.list .item:nth-last-child(1) {
   margin-bottom: 0;
 }
-.section.profile .container .profile-list .item .profile-img {
+.section.profile .container .profile-list.list .item .profile-img {
   width: 100%;
   margin-bottom: 32px;
 }
-.section.profile .container .profile-list .item .content {
+.section.profile .container .profile-list.list .item .content {
   width: 100%;
   padding-left: 16px;
   padding-right: 16px;
 }
-.section.profile .container .profile-list .item .content .title {
+.section.profile .container .profile-list.list .item .content .title {
   color: #2E2F42;
   font-family: "Roboto";
   font-weight: 500;
@@ -1008,7 +1009,7 @@ button.primary:focus {
   margin-bottom: 8px;
   text-align: center;
 }
-.section.profile .container .profile-list .item .content .text {
+.section.profile .container .profile-list.list .item .content .text {
   color: #434455;
   font-family: "Roboto";
   font-weight: 400;
@@ -1024,7 +1025,7 @@ button.primary:focus {
     padding-top: 96px;
     margin-bottom: 96px;
   }
-  .section.profile .container .profile-list {
+  .section.profile .container .profile-list.list {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1033,14 +1034,33 @@ button.primary:focus {
     margin-left: -12px;
     margin-right: -12px;
   }
-  .section.profile .container .profile-list .item {
+  .section.profile .container .profile-list.list .item {
     flex-basis: 40%;
     margin-left: 12px;
     margin-right: 12px;
     max-width: 246px;
   }
-  .section.profile .container .profile-list .item:nth-last-child(1) {
+  .section.profile .container .profile-list.list .item:nth-last-child(1) {
     margin-bottom: 72px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .section.profile {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .section.profile .container .profile-list.list {
+    justify-content: space-between;
+    padding-left: 156px;
+    padding-right: 156px;
+    padding-bottom: 0px;
+  }
+  .section.profile .container .profile-list.list .item {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .section.profile .container .profile-list.list .item:nth-last-child(1) {
+    margin-bottom: 0px;
   }
 }
 main {
